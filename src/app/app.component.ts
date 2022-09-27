@@ -3,8 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Basesangular';
+  public titulo:string = 'Contador APP1';
+  public numero:number=15;
+  public base:number=120;
+
+  acumula(valor:number):void{
+    this.numero+=valor;
+  }
+
+  
 }
+
